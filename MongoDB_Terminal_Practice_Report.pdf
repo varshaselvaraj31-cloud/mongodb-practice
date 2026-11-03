@@ -1,0 +1,151 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 2336 >>
+stream
+0.12 0.20 0.32 rg
+0.10 0.24 0.42 rg BT /F2 20 Tf 48 748 Td (MongoDB Command-Line Practice Report) Tj ET
+0.30 0.36 0.43 rg BT /F1 10 Tf 48 716 Td (CRUD operations, query operators, and a Library System use case) Tj ET
+0.35 0.40 0.45 rg BT /F1 9 Tf 48 696 Td (Environment: MongoDB 9.0.4 | mongosh 2.14.1 | Windows CMD) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 674 Td (1. Database and collection setup) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 653 Td (Opened mongosh from CMD and selected the studentDB database. Created the students) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 639 Td (collection.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 625 Td (use studentDB) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 614 Td (db.createCollection\("students"\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 603 Td (Result: { ok: 1 }) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 588 Td (2. Insert documents) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 567 Td (Inserted one student with insertOne, then inserted three more with insertMany.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 553 Td (db.students.insertOne\({) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 542 Td (  name: "Arun", age: 21, course: "MERN Stack",) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 531 Td (  status: "enrolled") Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 520 Td (}\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 509 Td (db.students.insertMany\([) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 498 Td (  { name: "Meena", age: 22, course: "MERN Stack", status: "enrolled" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 487 Td (  { name: "Kavin", age: 19, course: "Python", status: "enrolled" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 476 Td (  { name: "Nila", age: 24, course: "MERN Stack", status: "completed" }) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 465 Td (]\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 454 Td (Result: 1 + 3 student documents inserted successfully.) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 439 Td (3. Read and filter documents) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 418 Td (db.students.find\(\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 407 Td (db.students.find\({ course: "MERN Stack" }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 396 Td (The course filter returned Arun, Meena, and Nila.) Tj ET
+0.50 0.55 0.60 rg BT /F1 8 Tf 48 30 Td (MongoDB Terminal Practice | Page 1 of 3) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2929 >>
+stream
+0.12 0.20 0.32 rg
+0.10 0.24 0.42 rg BT /F2 20 Tf 48 748 Td (Updates and Query Operators) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 716 Td (4. Update documents) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 695 Td (Changed Arun's status using updateOne. Then changed matching enrolled MERN Stack students) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 681 Td (using updateMany.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 667 Td (db.students.updateOne\() Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 656 Td (  { name: "Arun" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 645 Td (  { $set: { status: "completed" } }) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 634 Td (\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 623 Td (db.students.updateMany\() Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 612 Td (  { course: "MERN Stack", status: "enrolled" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 601 Td (  { $set: { status: "in progress" } }) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 590 Td (\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 579 Td (Results: updateOne modified 1 document; updateMany matched and modified 1 document \(Meena\).) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 564 Td (Final student statuses: Arun - completed; Meena - in progress; Kavin - enrolled; Nila -) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 550 Td (completed.) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 536 Td (5. Query operators practiced) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 515 Td (db.students.find\({ age: { $gt: 20 } }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 504 Td ($gt means greater than. Returned students aged 21, 22, and 24.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 490 Td (db.students.find\({ age: { $lt: 21 } }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 479 Td ($lt means less than. Returned Kavin, age 19.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 465 Td (db.students.find\({ course: { $in: ["MERN Stack", "Python"] } }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 454 Td ($in matches either listed course. Returned all four students.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 440 Td (db.students.find\({ $and: [{ course: "MERN Stack" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 429 Td (  { status: "completed" }] }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 418 Td ($and requires both conditions. Returned Arun and Nila.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 404 Td (db.students.find\({ $or: [{ course: "Python" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 393 Td (  { age: { $gt: 23 } }] }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 382 Td ($or requires either condition. Returned Kavin \(Python\) and Nila \(age 24\).) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 368 Td (db.students.find\({ phone: { $exists: false } }\)) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 357 Td ($exists checks for a field. This returned all four students because none had a phone field.) Tj ET
+0.50 0.55 0.60 rg BT /F1 8 Tf 48 30 Td (MongoDB Terminal Practice | Page 2 of 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2903 >>
+stream
+0.12 0.20 0.32 rg
+0.10 0.24 0.42 rg BT /F2 20 Tf 48 748 Td (Delete Practice and Library Use Case) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 716 Td (6. Delete operations) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 695 Td (db.students.deleteMany\({}\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 684 Td (Result: deletedCount: 5. This cleared all five student documents, including the temporary) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 669 Td (TestDelete record.) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 654 Td (The temporary record was not removed by the deleteOne attempt because the method and filter) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 640 Td (were mistyped; its deleteOne result was deletedCount: 0. The later deleteMany command) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 626 Td (removed it along with the other student records.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 612 Td (db.books.deleteOne\({ title: "Web Development" }\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 601 Td (Result: deletedCount: 1. Removed only the Web Development book.) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 586 Td (7. Library System use case) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 565 Td (Created a books collection, inserted two books, searched for available books, and recorded a) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 551 Td (loan.) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 537 Td (db.createCollection\("books"\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 526 Td (db.books.insertMany\([) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 515 Td (  { title: "MongoDB Basics", author: "A. Kumar",) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 504 Td (    available: true, year: 2023 },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 493 Td (  { title: "Web Development", author: "S. Devi",) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 482 Td (    available: true, year: 2022 }) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 471 Td (]\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 460 Td (db.books.find\({ available: true }\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 449 Td (db.books.updateOne\() Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 438 Td (  { title: "MongoDB Basics" },) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 427 Td (  { $set: { available: false, borrowedBy: "Arun" } }) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 416 Td (\)) Tj ET
+0.12 0.18 0.24 rg BT /F3 8.3 Tf 48 405 Td (db.books.find\({ borrowedBy: "Arun" }\)) Tj ET
+0.08 0.38 0.28 rg BT /F2 8.5 Tf 48 394 Td (Result: MongoDB Basics was marked unavailable and recorded as borrowed by Arun.) Tj ET
+0.10 0.32 0.55 rg BT /F2 13 Tf 48 379 Td (Practice summary) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 358 Td (Practiced database and collection setup, insert, read, update, delete, six query operators,) Tj ET
+0.12 0.16 0.20 rg BT /F1 9.2 Tf 48 344 Td (and a small library catalogue workflow.) Tj ET
+0.50 0.55 0.60 rg BT /F1 8 Tf 48 30 Td (MongoDB Terminal Practice | Page 3 of 3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000000347 00000 n 
+0000002735 00000 n 
+0000002881 00000 n 
+0000005862 00000 n 
+0000006008 00000 n 
+0000008964 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+9112
+%%EOF
